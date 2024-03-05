@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>NEW STUDENT REGISTRATION</title>
+    </head>
+    <body>
+        <form action="scripts/data.php" method="post" enctype="application/x-www-form-urlencoded">
+            <label for="student_name">Name: </label>
+            <input type="text" name="student_name" id="student_name" placeholder="Input your name here" required>
+            <br>
+            <label for="telephone_number">Telephone: </label>
+            <input type="text" name="telephone_number" id="telephone_number" required>
+            <br>
+            <label for="email_address">Email: </label>
+            <input type="email" name="email_address" id="email_address" required>
+            <br>
+            <textarea name="Date" id="Date" rows="10" cols="25" required>
+                Please enter your date of birth here.
+            </textarea>
+            <br>
+            <textarea name="Address" id="address" rows="10" cols="25" required>
+                Please enter your physical address here.
+            </textarea>
+            <fieldset>
+                <legend>Courses</legend>
+                <p>Select your course of choice</p>
+                <input type="radio" name="Courses" id="Engineering" value="Engineering" required>
+                <label for="Engineering">Engineering</label>
+                <br>
+                <input type="radio" name="Courses" id="Law" value="Law" required>
+                <label for="Law">Law</label>
+                <br>
+                <input type="radio" name="Courses" id="Medicine" value="Medicine" required>
+                <label for="Medicine">Medicine</label>
+            </fieldset>
+            <fieldset>
+                <legend>Gender</legend>
+                <input type="radio" name="gender" id="male" value="Male" required>
+                <label for="male">Male</label>
+                <input type="radio" name="gender" id="female" value="Female" required>
+                <label for="female">Female</label>
+            </fieldset>
+            <hr>
+            <input type="submit" id="submit" name="submit" value="Register">
+            <input type="reset" id="clear" name="clear" value="Cancel">
+        </form>
+    </body>
+</html>
