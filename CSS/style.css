@@ -1,13 +1,5 @@
-#yellow_paragraph{
-    color: yellow;
-    font-size: 65px;
-}
-.red_paragraph{
-    color: red;
-    font-size: 50px;
-}
-
-.image{
-    width: 20%;
-    border: 1px solid red;
-}
+.image {
+    width: 500px; 
+    height: 500px; 
+    border: 5px solid green; 
+  }
