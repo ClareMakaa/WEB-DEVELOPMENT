@@ -1,13 +1,39 @@
 #yellow_paragraph{
     color: yellow;
     font-size: 65px;
+    font-family: 'Times New Roman', Times, serif;
 }
 .red_paragraph{
     color: red;
     font-size: 50px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .image{
     width: 20%;
     border: 1px solid red;
+    padding: 30px;
+    margin: 0 auto;
+    display: block;
+}
+.item{
+    padding: 100px;
+    width: 10px;
+    height: 10px;
+    gap: 150px;
+}
+
+.item p{
+    color: aliceblue;
+}
+
+.container{
+    border: 1px solid black;
+    display: flex;
+    width: 1000px;
+    height: 1000px;
+    background-color: aqua;
+    position: relative;
+    left: 100px;
+    top: 200px;
 }
