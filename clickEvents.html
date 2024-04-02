@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Click Events</title>
+</head>
+<body>
+    <p id="p_one">Hello. Welcome to my web page</p>       
+    <button id="btn_one" name="btn_one" class="btn_change" >Change Text</button>
+
+    <script>
+        var btn = document.getElementById("btn_one");
+
+         function changeText(event){
+            console.log(event);
+            var txt = document.getElementById("p_one");
+            txt.innerText = "This is a lesson in HTML DOM, Events and Events Listeners."
+         }
+
+         btn.addEventListener("click", changeText);
+    </script>
+</body>
+</html>
